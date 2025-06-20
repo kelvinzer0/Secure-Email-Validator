@@ -28,12 +28,12 @@ WORKDIR /root/
 COPY --from=builder /app/secure-email-validator .
 
 # Expose port for API server mode
-EXPOSE 8080
+EXPOSE 8587
 
 # Health check for service monitoring
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD ./secure-email-validator -server -port 8080 & sleep 1 && \
-      wget --no-verbose --tries=1 --spider http://localhost:8080/health || exit 1
+  CMD ./secure-email-validator -server -port 8587 & sleep 1 && \
+      wget --no-verbose --tries=1 --spider http://localhost:8587/health || exit 1
 
 # Default command shows help
 CMD ["./secure-email-validator", "-help"]

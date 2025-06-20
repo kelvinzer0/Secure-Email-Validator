@@ -54,19 +54,19 @@ make install
 
 #### Start HTTP Server
 ```bash
-./bin/secure-email-validator -server -port 8080
+./bin/secure-email-validator -server -port 8587
 ```
 
 #### API Endpoints
 
 **Email Validation**
 ```bash
-curl "http://localhost:8080/validate?email=user@company.com&verbose=true"
+curl "http://localhost:8587/validate?email=user@company.com&verbose=true"
 ```
 
 **Service Health Check**
 ```bash
-curl "http://localhost:8080/health"
+curl "http://localhost:8587/health"
 ```
 
 ## 📋 Professional Use Cases

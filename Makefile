@@ -78,7 +78,7 @@ build-all:
 # Development server (with auto-reload)
 dev:
 	@echo "Starting development server..."
-	@go run $(MAIN_PACKAGE) -server -port 8080
+	@go run $(MAIN_PACKAGE) -server -port 8587
 
 # Show help
 help:
