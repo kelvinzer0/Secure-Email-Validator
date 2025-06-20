@@ -20,7 +20,7 @@ A professional command-line tool and HTTP API server written in Go for comprehen
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/secure-email-validator.git
+git clone https://github.com/kelvinzer0/secure-email-validator.git
 cd secure-email-validator
 make build
 ```
